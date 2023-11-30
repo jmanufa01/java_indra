@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                     // Clonar el repositorio desde GitHub
-                 git url 'https://github.com/jmanufa01/java_indra.git'
+                 git 'https://github.com/jmanufa01/java_indra.git'
             }
         }
 
