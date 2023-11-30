@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    // Clonar el repositorio desde GitHub
+                    git 'https://github.com/jmanufa01/java_indra.git'
+                }
+            }
+        }
+
+        stage('Run') {
+            steps {
+                script {
+                    // Compilar y ejecutar el programa Java
+                    sh 'javac Main.java'
+                    sh 'java Main'
+                }
+            }
+        }
+    }
+}
