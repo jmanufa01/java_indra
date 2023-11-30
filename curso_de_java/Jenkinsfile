@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                    dir('/var/jenkins_home/workspace/ejercicio Usuario jenkins/curso_de_java/src/main/java') {
-                        sh 'javac main.java'
-                        sh 'java main'
+                    dir('/var/jenkins_home/workspace/ejercicio Usuario jenkins/curso_de_java') {
+                        echo './empleados.txt'
                     }
             }
         }

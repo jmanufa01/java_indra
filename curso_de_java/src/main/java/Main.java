@@ -2,6 +2,8 @@ import domain.Empleado;
 import domain.Horario;
 import domain.Posicion;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,9 +26,11 @@ public class Main {
                 empleados.add(empleado);
             }
 
+            final var bw = new BufferedWriter(new FileWriter("empleados.txt"));
             for (Empleado empleado : empleados) {
-                System.out.println(empleado);
+                bw.write(empleado.toString());
             }
+            bw.close();
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

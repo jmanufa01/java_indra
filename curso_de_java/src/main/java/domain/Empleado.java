@@ -19,32 +19,32 @@ public class Empleado {
         switch (this.posicion) {
             case CEO -> {
                 if (this.horario.getIngreso() >= 7 && this.horario.getRegreso() < 18) {
-                    this.salario = this.salario * 0.01;
+                    this.salario = this.salario - (this.salario *0.01);
                 }
             }
             case JEFE -> {
                 if (this.horario.getIngreso() >= 8 && this.horario.getRegreso() < 18) {
-                    this.salario = this.salario * 0.05;
+                    this.salario = this.salario - (this.salario * 0.05);
                 }
             }
             case INGENIERO -> {
                 if (this.horario.getIngreso() >= 9 && this.horario.getRegreso() < 18) {
-                    this.salario = this.salario * 0.15;
+                    this.salario = this.salario - (this.salario * 0.15);
                 }
             }
             case ANALISTA -> {
                 if (this.horario.getIngreso() >= 9 && this.horario.getRegreso() < 17) {
-                    this.salario = this.salario * 0.20;
+                    this.salario = this.salario - (this.salario * 0.20);
                 }
             }
             case SCRUM_MASTER -> {
                 if (this.horario.getIngreso() >= 9 && this.horario.getRegreso() < 18) {
-                    this.salario = this.salario * 0.1;
+                    this.salario = this.salario - (this.salario* 0.1);
                 }
             }
             case RRHH -> {
                 if (this.horario.getIngreso() >= 9 && this.horario.getRegreso() < 18) {
-                    this.salario = this.salario * 0.09;
+                    this.salario = this.salario * (this.salario * 0.09);
                 }
             }
         }
