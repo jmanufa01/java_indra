@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                    // Clonar el repositorio desde GitHub
-                 git 'https://github.com/jmanufa01/java_indra.git'
-            }
-        }
-
         stage('Run') {
             steps {
                     dir('/var/jenkins_home/workspace/ejercicio Usuario jenkins/curso_de_java/src/main/java') {
