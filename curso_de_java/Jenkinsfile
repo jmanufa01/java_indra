@@ -5,7 +5,7 @@ pipeline {
         stage('Run') {
             steps {
                     dir('/var/jenkins_home/workspace/ejercicio Usuario jenkins/curso_de_java') {
-                        readFile './empleados.txt'
+                        sh 'cat ./empleados.txt'
                     }
             }
         }
