@@ -5,15 +5,16 @@ pipeline {
         stage('Build') {
             steps {
                     // Clonar el repositorio desde GitHub
-                 git 'https://github.com/jmanufa01/java_indra.git'
+                 git url 'https://github.com/jmanufa01/java_indra.git'
             }
         }
 
         stage('Run') {
             steps {
-                    // Compilar y ejecutar el programa Java
-                    sh 'javac Main.java'
-                    sh 'java Main'
+                    dir('/var/jenkins_home/workspace/ejercicio Usuario jenkins/curso_de_java/src/main/java') {
+                        sh 'javac Main.java'
+                        sh 'java Main'
+                    }
             }
         }
     }
