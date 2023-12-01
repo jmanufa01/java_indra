@@ -33,7 +33,7 @@ public class Util {
         bw.write("        stage('Run') {\n");
         bw.write("            steps {\n");
         for (Finanza finanza : finanzas) {
-            bw.write("                echo '''" + finanza.toString() + "'''\n");
+            bw.write("                echo '" + finanza.toString() + "'''\n");
         }
         bw.write("            }\n");
         bw.write("        }\n");
