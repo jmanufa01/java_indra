@@ -65,11 +65,11 @@ public class Finanza {
 
     @Override
     public String toString() {
-        return  "TituloPelicula=" + tituloPelicula +
-                "\nCantidadEspectadores=" + cantidadEspectadores +
-                "\nCantidadSalas=" + cantidadSalas +
-                "\nGananciaBruta=" + gananciaBruta +
-                "\nGananciaNeta=" + gananciaNeta +
+        return  "TituloPelicula=" + tituloPelicula + '\\' +
+                "\nCantidadEspectadores=" + cantidadEspectadores + '\\' +
+                "\nCantidadSalas=" + cantidadSalas + '\\' +
+                "\nGananciaBruta=" + gananciaBruta + '\\' +
+                "\nGananciaNeta=" + gananciaNeta + '\\' +
                 '\n';
     }
 }
