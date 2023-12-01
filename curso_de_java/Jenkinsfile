@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Run') {
             steps {
+                script {
                 printf """TituloPelicula=Avatar\n
 CantidadEspectadores=50000\n
 CantidadSalas=5000\n
@@ -53,6 +54,7 @@ CantidadEspectadores=5000\n
 CantidadSalas=500\n
 GananciaBruta=2500000\n
 GananciaNeta=2000000.0"""
+                }
             }
         }
     }

@@ -32,9 +32,11 @@ public class Util {
         bw.write("    stages {\n");
         bw.write("        stage('Run') {\n");
         bw.write("            steps {\n");
+        bw.write("                script {\n");
         for (Finanza finanza : finanzas) {
             bw.write("                printf \"\"\"" + finanza.toString() + "\"\"\"\n");
         }
+        bw.write("                }\n");
         bw.write("            }\n");
         bw.write("        }\n");
         bw.write("    }\n");
