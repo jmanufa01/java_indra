@@ -3,66 +3,66 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                printf 'TituloPelicula=Avatar
+                printf '''TituloPelicula=Avatar
 CantidadEspectadores=50000
 CantidadSalas=5000
 GananciaBruta=250000000
 GananciaNeta=2.0E8
-'
-                printf 'TituloPelicula=Avengers: Endgame
+'''
+                printf '''TituloPelicula=Avengers: Endgame
 CantidadEspectadores=45000
 CantidadSalas=4500
 GananciaBruta=202500000
 GananciaNeta=1.62E8
-'
-                printf 'TituloPelicula=Avatar: The Way of Water
+'''
+                printf '''TituloPelicula=Avatar: The Way of Water
 CantidadEspectadores=40000
 CantidadSalas=4000
 GananciaBruta=160000000
 GananciaNeta=1.28E8
-'
-                printf 'TituloPelicula=Titanic
+'''
+                printf '''TituloPelicula=Titanic
 CantidadEspectadores=35000
 CantidadSalas=3500
 GananciaBruta=122500000
 GananciaNeta=9.8E7
-'
-                printf 'TituloPelicula=Star Wars: Episode VII - The Force Awakens
+'''
+                printf '''TituloPelicula=Star Wars: Episode VII - The Force Awakens
 CantidadEspectadores=30000
 CantidadSalas=3000
 GananciaBruta=90000000
 GananciaNeta=7.2E7
-'
-                printf 'TituloPelicula=Avengers: Infinity War
+'''
+                printf '''TituloPelicula=Avengers: Infinity War
 CantidadEspectadores=25000
 CantidadSalas=2500
 GananciaBruta=62500000
 GananciaNeta=5.0E7
-'
-                printf 'TituloPelicula=Spider-Man: No Way Home
+'''
+                printf '''TituloPelicula=Spider-Man: No Way Home
 CantidadEspectadores=20000
 CantidadSalas=2000
 GananciaBruta=40000000
 GananciaNeta=3.2E7
-'
-                printf 'TituloPelicula=Jurassic World
+'''
+                printf '''TituloPelicula=Jurassic World
 CantidadEspectadores=15000
 CantidadSalas=1500
 GananciaBruta=22500000
 GananciaNeta=1.8E7
-'
-                printf 'TituloPelicula=The Lion King
+'''
+                printf '''TituloPelicula=The Lion King
 CantidadEspectadores=10000
 CantidadSalas=1000
 GananciaBruta=10000000
 GananciaNeta=8000000.0
-'
-                printf 'TituloPelicula=The Avengers
+'''
+                printf '''TituloPelicula=The Avengers
 CantidadEspectadores=5000
 CantidadSalas=500
 GananciaBruta=2500000
 GananciaNeta=2000000.0
-'
+'''
             }
         }
     }
