@@ -69,6 +69,6 @@ public class Finanza {
                 "\nCantidadEspectadores=" + cantidadEspectadores + '\\' +
                 "\nCantidadSalas=" + cantidadSalas + '\\' +
                 "\nGananciaBruta=" + gananciaBruta + '\\' +
-                "\nGananciaNeta=" + gananciaNeta + '\\';
+                "\nGananciaNeta=" + gananciaNeta;
     }
 }
